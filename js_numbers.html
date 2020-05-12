@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>java script numbers</h1>
+<p>js numbers are always 64-bit floating point where(52bits(value),11bits(exponent),1bit(sign)</p>
+<p>numbers are accurate up to 15 digits</p>
+<p id="demo"></p >
+<script>
+var x=2;
+var y=10.5;
+var z=123e-5 ;      //extra large and extra small values are stored are                                      stored with exponent
+var z1="samhitha";
+var add=x+z1;     //if we add a string and a number we get the result is                             string concatenation
+document.getElementById("demo").innerHTML=x+"<br>"+y+"<br>"+z+"<br>"+add+"<br>"+x.toString(2);
+//javascript converts strings in to number in numerical operations except "+"
+var z2=0xff  //number starting with 0x is a hexadecimal number
+document.write(x.toString());
+document.write(x.toExponential());
+document.write(y.toFixed(0));
+</script>
+</body>
+</html>
