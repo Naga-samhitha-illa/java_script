@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>javascript arrays printing using forloop</h1>
+<p id="hi"></p>
+<script>
+var a,i,text;
+a=["pen","paper","book"];
+text="<ul>"
+for(i=0;i<a.length;i++)
+{
+   text+="<li>"+a[i]+"</li>";
+}
+text+="</ul>";
+document.getElementById("hi").innerHTML=text+"<br>"+a.pop();
+a.push("pencil");     //inserting element in to array
+document.write(a);
+document.write(Array.isArray(a));   //as type of function of array is object we have Array.isArray()(fuction)
+</script>
+</body>
+</html>
