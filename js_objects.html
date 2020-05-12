@@ -1,0 +1,22 @@
+<!DOCTYPE>
+<html>
+<body>
+<h1>java objects</h1>
+<p  id="hello"></p>
+<script>
+var obj={
+firstname : "naga",
+lastname : "samhitha",
+age : 16,
+eyecolor : "black",
+fullname : function( ){
+     return this.firstname+" "+this.lastname;
+   }
+};
+document.getElementById("hello").innerHTML= obj.firstname;
+document.write("lastname is:"+obj["lastname"]+" ");
+document.write("fullname is:"+obj.fullname( )+" ");
+document.write("function definition is:"+obj.fullname);
+</script>   
+</body>
+</html>
