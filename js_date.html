@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>display date</h1>
+<p id="index"></p>
+<script>
+var d=new Date(); //ios date: 2012-03-23;short date:09/04/2019;long                                   date:mar 23 2018
+var ms=Date.parse("march 21,2012");   //date.parse gives the number of                           milliseconds b/w given date to jan1,1970
+document.getElementById("index").innerHTML=d+"<br>"+ms;
+</script>
+</body>
+</html>
