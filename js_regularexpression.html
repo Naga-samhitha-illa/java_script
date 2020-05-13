@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>javascript regular expression</h1>
+<p id="hi"></p>
+<script>
+var str="visit w3schools";
+var n=str.search(/W3schools/i);
+var x=str.replace("visit","welcome");
+var patt1=/i/g;
+var x1=str.match(patt1);
+document.getElementById("hi").innerHTML=n+"<br>"+x+"<br>"+x1+"<br>"+/e/.test(str);
+</script>
+</body>
+</html>
