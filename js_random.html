@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>rondom function in math object</h1>
+<p id="hello"></p>
+<script>
+document.getElementById("hello").innerHTML=Math.random( )+"<br>"+Math.floor(Math.random( )*10)+"<br>"+Math.floor((Math.random( )*10)+1)+"<br>"+myfun(0,10);//math.random inside                                                                                  math.floorgives answer from number                                               ( 1- 9)(when multilied with 10(1-9),when                                               multiplied with 11(1-10))
+function myfun(min,max){
+     return Math.floor(Math.random()*(max-min))+min;
+     }
+</script>
+</body>
+</html>
