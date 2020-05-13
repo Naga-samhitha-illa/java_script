@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>switch case in javascript</h1>
+<p id="hello"></p>
+<script>
+var text;
+switch( new Date().getDay() )
+{
+   case 0:
+   case 6:
+          text="it's weekend holiday time";
+          break;
+   case 1:
+   case 2:
+   case 3:
+   case 4:
+   case 5:
+           text=" weekly days college time";
+           break;
+   default:
+          text="something went worng";
+ }
+document.getElementById("hello").innerHTML=text;
+</script>
+</body>
+</html>
