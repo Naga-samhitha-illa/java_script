@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>for/in and for/of loop</h1>
+<p id="hello"></p>
+<script>
+var name=["samhi","raji","harshini"];
+var x;
+var txt=" ";
+for(x in name)
+{
+   txt+=name[x];
+}
+for(x of name)
+{
+    document.write(x);
+}
+document.getElementById("hello").innerHTML=txt;
+
+</script>
+</body>
+</html>
