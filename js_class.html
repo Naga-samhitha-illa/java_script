@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>javascript classes</h1>
+<p id="hello"></p>
+<script>
+class get
+{
+   //if you doesnot create a constructor  js creates a invisible constructor
+  
+     constructor(brand,col){          
+     this.carname=brand;
+    this.carcolor=col;
+   }
+ //method
+  
+   fun( )                                   
+  {
+      return this.carcolor;
+   }
+ //static method which is called using class name to use object inside static method we object as parameter to static method
+ 
+  static num(n)
+  {
+       return "no.of persons can fit on this car "+n;
+   }
+}
+//inheritance this class can access  all the functions in above class
+
+  class model extends get{      
+    constructor(brand)
+    {
+          super(brand);
+    }
+  }
+obj=new get("volvo","red");
+obj1=new model("luno");
+document.getElementById("hello").innerHTML=obj.carname+"<br>"+obj.fun( )+"<br>"+get.num(4);
+</script>
+</body>
+</html>
