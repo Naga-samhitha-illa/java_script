@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>ecma6 features</h1>
+<p id="hi"></p>
+<script>
+var x=Number.EPSILON;
+var y=Number.MIN_SAFE_INTEGER;
+var z=Number.MAX_SAFE_INTEGER;
+var a=10;
+document.getElementById("hi").innerHTML=x+"<br> "+y+"<br>"+z+"<br>"+Number.isInteger(10)+"<br>"+Number.isSafeInteger(10)+"<br>"+isFinite(10/0)+"<br>"+isNaN("hello");
+</script>
+</body>
+</html>
