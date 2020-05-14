@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>Hoisting</h1>
+<p>hoisting is a default behaviour of javascript of moving declarations to the top(that means we can use the variable and declare i later)</p>
+<p id="helo"></p>
+<script>
+x=3;
+document.getElementById("helo").innerHTML=x+"<br>"+y;
+var x;
+var y=4;         //hoisting takes only declaration to the top not initialization
+</script>
+</body>
+</html>
