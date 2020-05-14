@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>javascript scopes</h1>
+<p>there are two types of scopes local and global scope</p>
+<p id="helo"></p>
+<script>
+ y="samhitha";   //here y is global variable can be accessed any where                                 in the program.any variable having a value without its                            declaration is considered as global variable
+fun( );
+document.getElementById("helo").innerHTML=typeof(x)+"<br>"+typeof(y);
+function fun( )
+{                        
+  var x=10;  //here x is local variable it can be accessed with the functon                      only
+  document.write(typeof(x));
+  document.write(typeof(y));
+ }
+</script>
+</body>
+</html>
