@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1></h1>
+<p id = "hi"></p>
+<script>
+var str =  "         heelo    ";
+var txt = '{"name":"john","age":30}'
+var x={name:"samhitha",lan:"english"};
+//json.parse() converts string in to a object
+var obj=JSON.parse(txt);  
+//json.stringify convertsbobj in to string
+var a=JSON.stringify(obj); 
+//Date.now() gives the no,of milliseconds from JAN1,1970 TO NOW   
+Object.defineProperty(x,"lan",{   //let you define object property
+       value:"telugu",
+        writable:true,
+        enumerable:true,
+        configuration:true
+        }); 
+document.getElementById("hi").innerHTML=str.trim() +"<br>"+obj.name+"<br>"+obj.age+"<br>"+a+"<br>"+Date.now()+"<br>"+x.lan;
+</script>
+</body>
+</html>
