@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>this,call(),apply()</h1>
+<p>this refers to curent object call(),apply() are predefined these are used to call the method of an object by passing other object as paramter</p>
+<p id="helo"></p>
+<script>
+var a={fullname:function( ){
+                             return this.firstname+" "+this.lastname;
+                                }
+          };
+var b={firstname:"vasanth",lastname:"kumar"};
+var x=a.fullname.call(b);
+document.getElementById("helo").innerHTML=b.firstname+"<br>"+x;
+</script>
+</body>
+</html>
