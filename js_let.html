@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>let in javascript</h1>
+<p id="helo"></p>
+<script>
+var x=2;
+var x=3;         //redefining a variable using var keyword changes the                           whole value
+var y=1;
+{
+  let y=2;         //redefining a variable using let keyword changes the                        doesnot change the hole value(hoisting is not there for                           (let)
+} 
+document.getElementById("helo").innerHTML=x+"<br>"+y;
+</script>
+</body>
+</html>
