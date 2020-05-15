@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>javascript object.defineProperty(object,property,{value:value})  changes a property value</h1>
+<p id="hi"></p>
+<script>
+var person={ name:"samhitha" ,age:18};
+Object.defineProperty(person,"age",{value:17})
+document.getElementById("hi").innerHTML=person.age;
+</script>
+</body>
+</html>
