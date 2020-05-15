@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>lists the object properties</h1>
+<p id="hi"></p>
+<script>
+var a={name:"samhitha",age:18}
+//change property
+Object.defineProperty(a,"age",{enumerable:false});
+Object.defineProperty(a,"language",{value:"english"})//adding new                                                                          property to object
+//display properities
+//object.keys( )display enumerable properities of object
+document.getElementById("hi").innerHTML=Object.getOwnPropertyNames(a)+"<br>"+Object.keys(a)+"<br>"+a.language;
+</script>
+</body>
+</html>
