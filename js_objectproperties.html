@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>javascript objects</h1>
+<p id="hi"></p>
+<script>
+var car=new Object( );          //object can be created in this way                                                     also
+car.name="suzuki";
+car.color="white"; 
+var y,txt=" ";
+for(y in car)
+{
+   txt+=car[y];
+}
+document.getElementById("hi").innerHTML=txt;
+</script>
+</body>
+</html>
