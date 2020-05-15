@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>javascript objects constructors</h1>
+<p id="hi"></p>
+<script>
+function person(first,last){
+this.firstname=first;
+this.lastname=last;
+}
+var sam=new person("vikram","kumar");  
+person.age=18;         //we cannot add new property to constructor                                  function
+document.getElementById("hi").innerHTML=sam.firstname+"<br>"+sam.age;
+</script>
+</body>
+</html>
