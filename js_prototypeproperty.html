@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>javascript objects constructors</h1>
+<p id="hi"></p>
+<script>
+function person(sweetname,years)
+{
+   this.name=sweetname;
+   this.age=years;
+}
+var obj=new person("samhitha",18);
+//by using prototype property we can insert values and methods  to object constructor
+person.prototype.language="telugu";
+person.prototype.bio=function( ){  return this.name +"age"+ this.age};
+document.getElementById("hi").innerHTML=obj.name+"<br>"+obj.age+"<br>"+obj.language+"<br>"+obj.bio( );
+</script>
+</body>
+</html>
