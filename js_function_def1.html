@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>javascript functions</h1>
+<p id="hi"></p>
+<p>function expression will execute automatically f the expression followed by ()(to indicate as expression we should close them in paranthesis)</p>
+<script>
+(function fun( ){
+    document.getElementById("hi").innerHTML="fun is called itself";
+ }) ( );
+//functions can also be used in expression
+function func(a,b )
+{
+   return(a*b);
+}
+//arrow function
+var y=(a,b)=>a*b;
+var x=func(4,3)+3;  //expression
+document.write(x+"<br>"+func.toString( )+"<br>"+y(3,4));
+document.write(func.arguments.length);//argument.length gives no.of arguments required for calling a function
+
+
+</script>
+</body>
+</html>
