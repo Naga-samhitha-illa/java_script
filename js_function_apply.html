@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>javascript functions</h1>
+<p id="hi"></p>
+<!--while js functions doesnot need datatype to parameters they doesnot check no.of parameters on calling and also they do not need not check the datatype of the parameter while passing an argument -->
+<p>javascript apply function</p>
+<p>difference between apply and call is apply takes argument as array
+</p>
+<script>
+var person={
+fullname:function(city,country ){
+     return this.firstname+" "+this.lastname;
+      }
+}
+var person1={ firstname:"john",lastname:"doe"}
+var person2={ firstname:"mary",lastname:"doe"}
+var x=person.fullname.apply(person1,["oslo","norway"]);
+document.getElementById("hi").innerHTML=x;
+</script>
+</body>
+</html>
