@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>javascript functions</h1>
+<p id="hi"></p>
+<script>
+//functions can be stored in variables also ,to invoke that function we should variable name also(we should use now variable as function).
+var x=function fun(a,b){ return a*b };
+//javascript has a built-in constructor called Function
+var myfun=new Function("a","b","return a+b");
+document.getElementById("hi").innerHTML=x(8,2)+"<br>"+myfun(2,3);
+//function hoisting takes place it makes declarations to the top(due to this function can be called before declaration)
+</script>
+</body>
+</html>
